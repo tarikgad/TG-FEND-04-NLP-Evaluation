@@ -23,7 +23,7 @@ const postData = async ( url = '', data = {})=>{
 function checkForName(inputText) {
     console.log("::: Running checkForName :::",inputText);
     
-    postData('/add', {inputdata:inputText});
+    postData('http://localhost:8080/add', {inputdata:inputText});
 }
 
-export { checkForName };
+export { checkForName,postData };
