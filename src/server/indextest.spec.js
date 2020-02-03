@@ -1,6 +1,6 @@
 import request from 'supertest';
 import '@babel/polyfill';
-import app from './index';
+import {app} from './index';
 import { response } from 'express';
 
 describe('post', function() {
