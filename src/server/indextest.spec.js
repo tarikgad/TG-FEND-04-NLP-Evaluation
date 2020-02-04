@@ -5,9 +5,9 @@ const supertest = require('supertest');
 const request = supertest(app);
 
 it('gets the test endpoint', async done => {
-    const response = await request.get('/callit');
+    const response = await request.get('http://localhost:8080/callit');
   
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(404);
     done();
   });
 
