@@ -15,6 +15,8 @@ async function handleSubmit(event) {
     let formText = document.getElementById('name').value;
     if(validURL(formText)){
         alert("Try a normal sentance. It's not for URL");
+    }else if(document.getElementById('name').value == ""){
+        alert("Try a normal sentance. It can't a blank");
     }else{
         console.log("reading value: ",formText);
         await Client.checkForName(formText);

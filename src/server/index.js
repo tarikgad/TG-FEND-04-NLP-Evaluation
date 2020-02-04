@@ -65,5 +65,5 @@ async function add (req,res){
     },1000);
 }
 
-export {app};
+module.exports = app;
 
